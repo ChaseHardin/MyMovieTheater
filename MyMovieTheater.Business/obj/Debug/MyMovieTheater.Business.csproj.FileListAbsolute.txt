@@ -1,0 +1,15 @@
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\AutoMapper.Net4.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\MyMovieTheater.Business.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\MyMovieTheater.Business.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\AutoMapper.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\LinqKit.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\MyMovieTheater.Data.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\EntityFramework.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\MyMovieTheater.Data.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\AutoMapper.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\AutoMapper.xml
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\AutoMapper.Net4.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\EntityFramework.xml
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\obj\Debug\MyMovieTheater.Business.csprojResolveAssemblyReference.cache
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\obj\Debug\MyMovieTheater.Business.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\obj\Debug\MyMovieTheater.Business.pdb

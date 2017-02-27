@@ -99,12 +99,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MyMovieTheater.API\MyMovieTheater.API.csproj">
-      <Project>{EF3924F5-668A-42A6-BB46-C9BFE768FB32}</Project>
-      <Name>MyMovieTheater.API</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

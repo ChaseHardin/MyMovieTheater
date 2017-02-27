@@ -1,0 +1,10 @@
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\MyMovieTheater.Data.dll.config
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\MyMovieTheater.Data.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\MyMovieTheater.Data.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.xml
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.csprojResolveAssemblyReference.cache
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.pdb
