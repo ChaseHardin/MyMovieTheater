@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
 using MyMovieTheater.Business.ViewModels;
+using MyMovieTheater.Data;
 
 namespace MyMovieTheater.Business.Services
 {
@@ -7,7 +10,10 @@ namespace MyMovieTheater.Business.Services
     {
         public List<MovieViewModel> GetMovies()
         {
-            throw new System.NotImplementedException();
+            using (var db = Application.GetDatabaseInstance())
+            {
+                return db.Movies.Select(Mapper.Map<MovieViewModel>).ToList();
+            }
         }
     }
 }

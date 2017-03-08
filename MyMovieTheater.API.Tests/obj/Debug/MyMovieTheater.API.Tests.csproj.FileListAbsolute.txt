@@ -25,3 +25,4 @@ C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\System.Web.WebPages.Raz
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\obj\Debug\MyMovieTheater.API.Tests.csprojResolveAssemblyReference.cache
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\obj\Debug\MyMovieTheater.API.Tests.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\obj\Debug\MyMovieTheater.API.Tests.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll

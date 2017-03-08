@@ -13,3 +13,6 @@ C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\EntityFramework.xml
 C:\Dev\MyMovieTheater\MyMovieTheater.Business\obj\Debug\MyMovieTheater.Business.csprojResolveAssemblyReference.cache
 C:\Dev\MyMovieTheater\MyMovieTheater.Business\obj\Debug\MyMovieTheater.Business.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.Business\obj\Debug\MyMovieTheater.Business.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\MyMovieTheater.Business.dll.config
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business\bin\Debug\EntityFramework.SqlServer.xml

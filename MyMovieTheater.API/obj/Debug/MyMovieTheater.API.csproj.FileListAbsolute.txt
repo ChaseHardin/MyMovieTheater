@@ -23,3 +23,5 @@ C:\Dev\MyMovieTheater\MyMovieTheater.API\bin\EntityFramework.xml
 C:\Dev\MyMovieTheater\MyMovieTheater.API\obj\Debug\MyMovieTheater.API.csprojResolveAssemblyReference.cache
 C:\Dev\MyMovieTheater\MyMovieTheater.API\obj\Debug\MyMovieTheater.API.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.API\obj\Debug\MyMovieTheater.API.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.API\bin\EntityFramework.SqlServer.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.API\bin\EntityFramework.SqlServer.xml

@@ -3,3 +3,4 @@ C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\MyMovieTheater.Bus
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.csprojResolveAssemblyReference.cache
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
