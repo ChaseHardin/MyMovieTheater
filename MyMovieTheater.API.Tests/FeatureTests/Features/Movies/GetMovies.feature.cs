@@ -71,11 +71,9 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Features.Movies
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
- testRunner.When("I GET \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I GET \'api/movies\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 5
  testRunner.Then("the status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 6
- testRunner.And("the JSON at \'\' should be \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

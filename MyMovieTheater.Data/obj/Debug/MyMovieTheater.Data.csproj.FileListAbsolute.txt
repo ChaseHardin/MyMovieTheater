@@ -8,3 +8,13 @@ C:\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.SqlServer.xm
 C:\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.csprojResolveAssemblyReference.cache
 C:\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.pdb
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\MyMovieTheater.Data.dll.config
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\MyMovieTheater.Data.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\MyMovieTheater.Data.pdb
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.xml
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Data\obj\Debug\MyMovieTheater.Data.pdb

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyMovieTheater.API.Tests.FeatureTests.Context;
 using RestSharp;
 using TechTalk.SpecFlow;
@@ -7,7 +8,7 @@ using TechTalk.SpecFlow;
 namespace MyMovieTheater.API.Tests.FeatureTests.Steps
 {
     [Binding]
-    public sealed class HttpSteps
+    class HttpSteps
     {
         public static readonly string MyMovieTheaterServerUrl = ConfigurationManager.AppSettings["MyMovieTheaterServerUrl"];
 
@@ -17,12 +18,19 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
             ExecuteHttp(Method.GET, url, "");
         }
 
+        [Then(@"the status should be (.*)")]
+        public void ThenTheStatusShouldBe(int expected)
+        {
+            var code = HttpContext.Get().StatusCode;
+            Assert.AreEqual(expected, code, "Incorrect HTTP status code");
+        }
+
         private void ExecuteHttp(Method method, string url, string bodyString)
         {
             var request = new RestRequest(PrepareUrl(url), method);
             request.UseDefaultCredentials = true;
             request.AddHeader("Accept", "application/json");
-            request.AddHeader("ContentType", "applicationJson");
+            request.AddHeader("ContentType", "application/json");
             request.AddParameter("application/json", MyMovieTheaterFeatureContext.Get().SubstituteKeys(bodyString), ParameterType.RequestBody);
 
             var response = new RestClient(MyMovieTheaterServerUrl).Execute(request);
