@@ -3,12 +3,12 @@ using MyMovieTheater.Business.Services;
 
 namespace MyMovieTheater.API.Controllers
 {
-    [RoutePrefix("api/admin/movies")]
+    [RoutePrefix("api")]
     public class MoviesController : ApiController
     {
         private readonly MovieService _service = new MovieService();
 
-        [HttpGet, Route("")]
+        [HttpGet, Route("movies")]
         public virtual IHttpActionResult Get()
         {
             var movies = _service.GetMovies();
