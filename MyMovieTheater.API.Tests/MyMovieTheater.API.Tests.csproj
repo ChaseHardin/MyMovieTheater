@@ -125,6 +125,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyMovieTheater.API\MyMovieTheater.API.csproj">
+      <Project>{66df8658-cb85-455a-abd3-1de884320b88}</Project>
+      <Name>MyMovieTheater.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyMovieTheater.Business\MyMovieTheater.Business.csproj">
+      <Project>{572df39b-14b0-40e4-ac20-66cae1cdfdbd}</Project>
+      <Name>MyMovieTheater.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyMovieTheater.Data\MyMovieTheater.Data.csproj">
       <Project>{DA74E6D9-332B-4582-8EF5-9201074121AE}</Project>
       <Name>MyMovieTheater.Data</Name>

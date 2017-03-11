@@ -7,16 +7,20 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Infrastructure
     public class Substituter
     {
         private readonly IDictionary<string, string> _substituteMap = new Dictionary<string, string>();
-
         public void AddSubstitute(string key, string value)
         {
             _substituteMap["{" + key + "}"] = value;
         }
 
-        public string SubstituteKeys(string s)
+        public string SubstitueKeys(string s)
         {
             var match = SubstituteMatches(s);
             return ReplaceMatches(s, match);
+        }
+
+        private static MatchCollection SubstituteMatches(string s)
+        {
+            return Regex.Matches(s, "{.*?}+");
         }
 
         private string ReplaceMatches(string s, MatchCollection match)
@@ -33,13 +37,7 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Infrastructure
                     Console.WriteLine("WARN: Potential missing key in context \"" + key + "\"");
                 }
             }
-
             return s;
-        }
-
-        private MatchCollection SubstituteMatches(string s)
-        {
-            return Regex.Matches(s, "{.*?}+");
         }
     }
 }

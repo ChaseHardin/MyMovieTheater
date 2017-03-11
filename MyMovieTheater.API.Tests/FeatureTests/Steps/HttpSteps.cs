@@ -13,7 +13,7 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
         public static readonly string MyMovieTheaterServerUrl = ConfigurationManager.AppSettings["MyMovieTheaterServerUrl"];
 
         [When(@"I GET '(.*)'")]
-        public void WhenIGET(string url)
+        public void WhenWeGET(string url)
         {
             ExecuteHttp(Method.GET, url, "");
         }
@@ -21,30 +21,30 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
         [Then(@"the status should be (.*)")]
         public void ThenTheStatusShouldBe(int expected)
         {
-            var code = HttpContext.Get().StatusCode;
-            Assert.AreEqual(expected, code, "Incorrect HTTP status code");
+            Assert.AreEqual(expected, HttpContext.Get().StatusCode, "Incorrect HTTP status code");
         }
 
-        private void ExecuteHttp(Method method, string url, string bodyString)
+        private static void ExecuteHttp(Method method, string url, string bodyString)
         {
             var request = new RestRequest(PrepareUrl(url), method);
             request.UseDefaultCredentials = true;
             request.AddHeader("Accept", "application/json");
             request.AddHeader("ContentType", "application/json");
-            request.AddParameter("application/json", MyMovieTheaterFeatureContext.Get().SubstituteKeys(bodyString), ParameterType.RequestBody);
-
+            request.AddParameter("application/json", MyMovieTheaterFeatureContext.Get().SubstitueKeys(bodyString), ParameterType.RequestBody);
+           
             var response = new RestClient(MyMovieTheaterServerUrl).Execute(request);
+
             ExtractResponse(response);
         }
 
-        private void ExtractResponse(IRestResponse response)
+        private static void ExtractResponse(IRestResponse response)
         {
             HttpContext.Get().Response = response;
         }
 
-        private string PrepareUrl(string url)
+        private static string PrepareUrl(string url)
         {
-            var resource = MyMovieTheaterFeatureContext.Get().SubstituteKeys(url);
+            var resource = MyMovieTheaterFeatureContext.Get().SubstitueKeys(url);
             Console.WriteLine("URL: " + resource);
             return resource;
         }

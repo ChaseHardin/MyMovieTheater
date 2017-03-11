@@ -10,7 +10,8 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Context
         {
         }
 
-        public int StatusCode { get { return (int) Response.StatusCode; } }
+        public string ImpersonateUser { get; set; }
+        public int StatusCode { get { return (int)Response.StatusCode; } }
         public string Json { get { return Response.Content; } }
         public object CurrentObject { get; set; }
         public IList<Parameter> Headers { get { return Response.Headers; } }

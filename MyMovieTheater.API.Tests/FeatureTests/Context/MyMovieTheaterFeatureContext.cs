@@ -16,6 +16,15 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Context
             return this;
         }
 
+        public string SubstitueKeys(string s)
+        {
+            return _substituter.SubstitueKeys(s);
+        }
+
+        private MyMovieTheaterFeatureContext()
+        {
+        }
+
         public static MyMovieTheaterFeatureContext Get()
         {
             MyMovieTheaterFeatureContext ctx;
@@ -27,11 +36,6 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Context
             var ctx = new MyMovieTheaterFeatureContext();
             ScenarioContext.Current.Set(ctx);
             return ctx;
-        }
-
-        public string SubstituteKeys(string url)
-        {
-            return _substituter.SubstituteKeys(url);
         }
     }
 }
