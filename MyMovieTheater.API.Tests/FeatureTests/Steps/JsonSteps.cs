@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyMovieTheater.API.Tests.FeatureTests.Context;
 using MyMovieTheater.API.Tests.FeatureTests.Infrastructure;
@@ -14,7 +11,6 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
     {
         private static readonly JsonGetter JsonGetter = new JsonGetter(new Dictionary<string, string>
         {
-            
         });
 
         [Then(@"the JSON at '(.*)' should be '(.*)'")]

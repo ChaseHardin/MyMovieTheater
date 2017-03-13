@@ -18,6 +18,12 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
             ExecuteHttp(Method.GET, url, "");
         }
 
+        [When(@"I POST '(.*)' with the following:")]
+        public void WhenIPOSTWithTheFollowing(string url, string bodyString)
+        {
+            ExecuteHttp(Method.POST, url, MyMovieTheaterFeatureContext.Get().SubstitueKeys(bodyString));
+        }
+
         [Then(@"the status should be (.*)")]
         public void ThenTheStatusShouldBe(int expected)
         {

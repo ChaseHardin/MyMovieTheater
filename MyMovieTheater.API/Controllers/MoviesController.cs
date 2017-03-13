@@ -1,5 +1,6 @@
 ﻿using System.Web.Http;
 using MyMovieTheater.Business.Services;
+using MyMovieTheater.Business.ViewModels;
 
 namespace MyMovieTheater.API.Controllers
 {
@@ -12,6 +13,12 @@ namespace MyMovieTheater.API.Controllers
         public virtual IHttpActionResult Get()
         {
             return Ok(_service.GetMovies());
+        }
+
+        [HttpPost, Route("admin/movies")]
+        public virtual IHttpActionResult Post(MovieViewModel movie)
+        {
+            return Created(Request.RequestUri.PathAndQuery, _service.CreateMovie(movie));
         }
     }
 }

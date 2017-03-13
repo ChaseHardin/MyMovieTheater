@@ -110,6 +110,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GetMovies.feature</DependentUpon>
     </Compile>
+    <Compile Include="FeatureTests\Features\Movies\PostMovies.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PostMovies.feature</DependentUpon>
+    </Compile>
     <Compile Include="FeatureTests\Infrastructure\JsonGetter.cs" />
     <Compile Include="FeatureTests\Infrastructure\Substituter.cs" />
     <Compile Include="FeatureTests\Steps\HttpSteps.cs" />
@@ -123,6 +128,10 @@
     <None Include="FeatureTests\Features\Movies\GetMovies.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GetMovies.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureTests\Features\Movies\PostMovies.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PostMovies.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
