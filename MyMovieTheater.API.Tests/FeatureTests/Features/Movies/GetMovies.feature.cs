@@ -74,6 +74,16 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I GET \'api/movies\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 5
  testRunner.Then("the status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 6
+ testRunner.And("the JSON at \'[0].MovieId\' should be \'225f2e51-59a2-41c9-8fda-e1e062b4bc83\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 7
+ testRunner.And("the JSON at \'[0].Name\' should be \'King Kong\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 8
+ testRunner.And("the JSON at \'[0].ReleaseDate\' should be \'3/22/2013 00:00:00\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
+ testRunner.And("the JSON at \'[0].TicketPrice\' should be \'8.9\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 10
+ testRunner.And("the JSON at \'[0].Rating\' should be \'R\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

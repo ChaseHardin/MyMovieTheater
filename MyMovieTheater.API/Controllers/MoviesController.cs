@@ -11,8 +11,7 @@ namespace MyMovieTheater.API.Controllers
         [HttpGet, Route("movies")]
         public virtual IHttpActionResult Get()
         {
-            var movies = _service.GetMovies();
-            return Ok(new { movies });
+            return Ok(_service.GetMovies());
         }
     }
 }

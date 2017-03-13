@@ -110,8 +110,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GetMovies.feature</DependentUpon>
     </Compile>
+    <Compile Include="FeatureTests\Infrastructure\JsonGetter.cs" />
     <Compile Include="FeatureTests\Infrastructure\Substituter.cs" />
     <Compile Include="FeatureTests\Steps\HttpSteps.cs" />
+    <Compile Include="FeatureTests\Steps\JsonSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
