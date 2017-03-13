@@ -18,7 +18,7 @@ namespace MyMovieTheater.API.Controllers
         [HttpPost, Route("admin/movies")]
         public virtual IHttpActionResult Post(MovieViewModel movie)
         {
-            return Created(Request.RequestUri.PathAndQuery, _service.CreateMovie(movie));
+            return Created(Request.RequestUri.PathAndQuery, _service.AddMovie(movie));
         }
     }
 }

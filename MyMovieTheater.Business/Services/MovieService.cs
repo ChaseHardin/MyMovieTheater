@@ -18,7 +18,7 @@ namespace MyMovieTheater.Business.Services
             }
         }
 
-        public MovieViewModel CreateMovie(MovieViewModel movie)
+        public MovieViewModel AddMovie(MovieViewModel movie)
         {
             using (var db = Application.GetDatabaseInstance())
             {
