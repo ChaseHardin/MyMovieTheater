@@ -12,4 +12,4 @@ Scenario: Should return 201 on successful create
 	}
 	"""
 	Then the status should be 201
-	#And the Content-Type header should match regex 'application/json'
+	And the 'Content-Type' header should match regex 'application/json'

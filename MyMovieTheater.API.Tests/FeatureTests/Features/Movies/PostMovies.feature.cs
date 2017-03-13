@@ -76,6 +76,8 @@ this.ScenarioSetup(scenarioInfo);
                     "\t\"ticketPrice\": \"8.65\",\r\n\t\"rating\": \"R\"\r\n}", ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
  testRunner.Then("the status should be 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 15
+ testRunner.And("the \'Content-Type\' header should match regex \'application/json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

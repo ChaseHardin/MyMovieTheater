@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Configuration;
+using System.Linq;
+using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyMovieTheater.API.Tests.FeatureTests.Context;
 using RestSharp;
@@ -28,6 +30,28 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
         public void ThenTheStatusShouldBe(int expected)
         {
             Assert.AreEqual(expected, HttpContext.Get().StatusCode, "Incorrect HTTP status code");
+        }
+
+        [Then(@"the '(.*)' header should match regex '(.*)'")]
+        public void ThenTheHeaderShouldMatchRegex(string key, string expectedRegex)
+        {
+            var actual = HeaderForKey(key);
+
+            var r = new Regex(expectedRegex, RegexOptions.IgnoreCase);
+            var match = r.Match(actual);
+
+            Assert.IsTrue(match.Success, string.Format("Expected header key '{0}' with value '{1}' to match the regex '{2}'", key, actual, expectedRegex));
+        }
+
+        private static string HeaderForKey(string key)
+        {
+            var header = HttpContext.Get().Headers.ToList().Find(x => x.Name == key);
+            if (header == null)
+            {
+                Assert.Fail("Expected the response headers to include '{0}' and it did not", key);
+            }
+
+            return header.Value.ToString();
         }
 
         private static void ExecuteHttp(Method method, string url, string bodyString)
