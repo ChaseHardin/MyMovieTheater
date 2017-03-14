@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MyMovieTheater.API.Tests.FeatureTests.Features.Movies
+namespace MyMovieTheater.API.Tests.FeatureTests.Features.Admin.Movies
 {
     using TechTalk.SpecFlow;
     
@@ -18,20 +18,20 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Features.Movies
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("PostMovies")]
-    public partial class PostMoviesFeature
+    [NUnit.Framework.DescriptionAttribute("PutMovies")]
+    public partial class PutMoviesFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "PostMovies.feature"
+#line 1 "PutMovies.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PostMovies", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PutMovies", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,19 +64,21 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Features.Movies
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Should return 201 on successful create")]
-        public virtual void ShouldReturn201OnSuccessfulCreate()
+        [NUnit.Framework.DescriptionAttribute("Should update movie with a response of 200")]
+        public virtual void ShouldUpdateMovieWithAResponseOf200()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Should return 201 on successful create", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Should update movie with a response of 200", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
-#line hidden
 #line 4
- testRunner.When("I POST \'api/admin/movies/\' with the following:", "{\r\n\t\"movieId\": \"{movieId}\",\r\n\t\"name\": \"John Wick\",\r\n\t\"releaseDate\": \"03/22/17\",\r\n" +
-                    "\t\"ticketPrice\": \"8.65\",\r\n\t\"rating\": \"R\"\r\n}", ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
- testRunner.Then("the status should be 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("movie exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 5
+ testRunner.When("I PUT \'api/admin/movies/{movieId}\' with the following:", "{\r\n\t\"movieId\": \"{movieId}\",\r\n\t\"name\": \"John Wick 2\",\r\n\t\"releaseDate\": \"03/22/17\"," +
+                    "\r\n\t\"ticketPrice\": \"8.65\",\r\n\t\"rating\": \"R\"\r\n}", ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 15
+ testRunner.Then("the status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 16
  testRunner.And("the \'Content-Type\' header should match regex \'application/json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

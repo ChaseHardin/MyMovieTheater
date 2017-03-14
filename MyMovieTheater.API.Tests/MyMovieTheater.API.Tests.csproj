@@ -113,22 +113,27 @@
   <ItemGroup>
     <Compile Include="FeatureTests\Context\HttpContext.cs" />
     <Compile Include="FeatureTests\Context\MyMovieTheaterFeatureContext.cs" />
-    <Compile Include="FeatureTests\Features\Movies\DeleteMovies.feature.cs">
+    <Compile Include="FeatureTests\Features\Admin\Movies\DeleteMovies.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DeleteMovies.feature</DependentUpon>
     </Compile>
-    <Compile Include="FeatureTests\Features\Movies\GetMovies.feature.cs">
+    <Compile Include="FeatureTests\Features\Admin\Movies\GetMovies.feature.cs">
+      <DependentUpon>GetMovies.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FeatureTests\Features\Client\Movies\GetMovies.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GetMovies.feature</DependentUpon>
     </Compile>
-    <Compile Include="FeatureTests\Features\Movies\PostMovies.feature.cs">
+    <Compile Include="FeatureTests\Features\Admin\Movies\PostMovies.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PostMovies.feature</DependentUpon>
     </Compile>
-    <Compile Include="FeatureTests\Features\Movies\PutMovies1.feature.cs">
+    <Compile Include="FeatureTests\Features\Admin\Movies\PutMovies1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PutMovies.feature</DependentUpon>
@@ -144,19 +149,23 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FeatureTests\Features\Movies\DeleteMovies.feature">
+    <None Include="FeatureTests\Features\Admin\Movies\DeleteMovies.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DeleteMovies.feature.cs</LastGenOutput>
     </None>
-    <None Include="FeatureTests\Features\Movies\GetMovies.feature">
+    <None Include="FeatureTests\Features\Admin\Movies\GetMovies.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GetMovies.feature.cs</LastGenOutput>
     </None>
-    <None Include="FeatureTests\Features\Movies\PostMovies.feature">
+    <None Include="FeatureTests\Features\Client\Movies\GetMovies.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GetMovies.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureTests\Features\Admin\Movies\PostMovies.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PostMovies.feature.cs</LastGenOutput>
     </None>
-    <None Include="FeatureTests\Features\Movies\PutMovies.feature">
+    <None Include="FeatureTests\Features\Admin\Movies\PutMovies.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PutMovies1.feature.cs</LastGenOutput>
     </None>
