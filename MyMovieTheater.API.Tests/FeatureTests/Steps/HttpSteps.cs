@@ -26,6 +26,12 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
             ExecuteHttp(Method.POST, url, MyMovieTheaterFeatureContext.Get().SubstitueKeys(bodyString));
         }
 
+        [When(@"I PUT '(.*)' with the following:")]
+        public void WhenIPUTWithTheFollowing(string url, string bodyString)
+        {
+            ExecuteHttp(Method.PUT, url, MyMovieTheaterFeatureContext.Get().SubstitueKeys(bodyString));
+        }
+
         [Then(@"the status should be (.*)")]
         public void ThenTheStatusShouldBe(int expected)
         {

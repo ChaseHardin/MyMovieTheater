@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using AutoMapper;
 using MyMovieTheater.Business.ViewModels;
@@ -24,6 +25,17 @@ namespace MyMovieTheater.Business.Services
             {
                 movie.MovieId = Guid.NewGuid();
                 db.Movies.Add(Mapper.Map<MovieViewModel, Movie>(movie));
+                db.SaveChanges();
+            }
+
+            return movie;
+        }
+
+        public MovieViewModel UpdateMovie(Guid movieId, MovieViewModel movie)
+        {
+            using (var db = Application.GetDatabaseInstance())
+            {
+                db.Movies.AddOrUpdate(Mapper.Map<MovieViewModel, Movie>(movie));
                 db.SaveChanges();
             }
 

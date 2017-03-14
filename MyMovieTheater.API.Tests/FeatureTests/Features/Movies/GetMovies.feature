@@ -1,6 +1,7 @@
 ﻿Feature: GetMovies
 
 Scenario: Should return all movies
+	Given movie exists
 	When I GET 'api/movies'
 	Then the status should be 200
 	And the JSON at '[name=King Kong].movieId' should be '225f2e51-59a2-41c9-8fda-e1e062b4bc83'

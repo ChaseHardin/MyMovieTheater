@@ -71,19 +71,21 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Features.Movies
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
- testRunner.When("I GET \'api/movies\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("movie exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 5
- testRunner.Then("the status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I GET \'api/movies\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 6
+ testRunner.Then("the status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 7
  testRunner.And("the JSON at \'[name=King Kong].movieId\' should be \'225f2e51-59a2-41c9-8fda-e1e062b" +
                     "4bc83\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 7
- testRunner.And("the JSON at \'[name=King Kong].name\' should be \'King Kong\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 8
- testRunner.And("the JSON at \'[name=King Kong].releaseDate\' should be \'3/22/2013 00:00:00\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the JSON at \'[name=King Kong].name\' should be \'King Kong\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.And("the JSON at \'[name=King Kong].ticketPrice\' should be \'8.9\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the JSON at \'[name=King Kong].releaseDate\' should be \'3/22/2013 00:00:00\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
+ testRunner.And("the JSON at \'[name=King Kong].ticketPrice\' should be \'8.9\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
  testRunner.And("the JSON at \'[name=King Kong].rating\' should be \'R\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
