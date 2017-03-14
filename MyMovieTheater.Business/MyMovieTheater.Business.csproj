@@ -60,6 +60,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\DeleteMovieCommand.cs" />
+    <Compile Include="Commands\GetMoviesCommand.cs" />
+    <Compile Include="Commands\PostMovieCommand.cs" />
+    <Compile Include="Commands\PutMovieCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BaseService.cs" />
     <Compile Include="Services\MovieService.cs" />
