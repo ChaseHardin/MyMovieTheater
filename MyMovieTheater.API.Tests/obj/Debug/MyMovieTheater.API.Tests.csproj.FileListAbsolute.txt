@@ -83,3 +83,4 @@ C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.pdb
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.xml
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\obj\Debug\MyMovieTheater.API.Tests.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\obj\Debug\MyMovieTheater.API.Tests.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.Net4.dll

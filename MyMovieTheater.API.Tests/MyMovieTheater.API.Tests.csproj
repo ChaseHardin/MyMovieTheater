@@ -113,6 +113,11 @@
   <ItemGroup>
     <Compile Include="FeatureTests\Context\HttpContext.cs" />
     <Compile Include="FeatureTests\Context\MyMovieTheaterFeatureContext.cs" />
+    <Compile Include="FeatureTests\Features\Movies\DeleteMovies.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteMovies.feature</DependentUpon>
+    </Compile>
     <Compile Include="FeatureTests\Features\Movies\GetMovies.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -139,6 +144,10 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="FeatureTests\Features\Movies\DeleteMovies.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteMovies.feature.cs</LastGenOutput>
+    </None>
     <None Include="FeatureTests\Features\Movies\GetMovies.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GetMovies.feature.cs</LastGenOutput>

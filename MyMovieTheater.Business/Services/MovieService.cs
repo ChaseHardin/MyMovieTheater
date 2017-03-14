@@ -41,5 +41,17 @@ namespace MyMovieTheater.Business.Services
 
             return movie;
         }
+
+        public MovieViewModel DeleteMovie(Guid movieId)
+        {
+            using (var db = Application.GetDatabaseInstance())
+            {
+                var movie = db.Movies.FirstOrDefault(x => x.MovieId == movieId);
+                db.Movies.Remove(movie);
+                db.SaveChanges();
+
+                return Mapper.Map<Movie, MovieViewModel>(movie);
+            }
+        }
     }
 }

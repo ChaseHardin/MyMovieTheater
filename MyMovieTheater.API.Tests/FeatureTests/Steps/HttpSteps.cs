@@ -32,6 +32,12 @@ namespace MyMovieTheater.API.Tests.FeatureTests.Steps
             ExecuteHttp(Method.PUT, url, MyMovieTheaterFeatureContext.Get().SubstitueKeys(bodyString));
         }
 
+        [When(@"I DELETE '(.*)' with the following:")]
+        public void WhenIDELETEWithTheFollowing(string url, string bodyString)
+        {
+            ExecuteHttp(Method.DELETE, url, MyMovieTheaterFeatureContext.Get().SubstitueKeys(bodyString));
+        }
+
         [Then(@"the status should be (.*)")]
         public void ThenTheStatusShouldBe(int expected)
         {

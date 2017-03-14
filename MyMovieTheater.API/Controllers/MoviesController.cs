@@ -27,5 +27,11 @@ namespace MyMovieTheater.API.Controllers
         {
             return Ok(_service.UpdateMovie(movieId, movie));
         }
+
+        [HttpDelete, Route("admin/movies/{movieId}")]
+        public virtual IHttpActionResult Delete(Guid movieId)
+        {
+            return Ok();
+        }
     }
 }
