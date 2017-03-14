@@ -14,4 +14,3 @@ C:\Dev\MyMovieTheater\MyMovieTheater.Test.Data\bin\Debug\EntityFramework.xml
 C:\Dev\MyMovieTheater\MyMovieTheater.Test.Data\obj\Debug\MyMovieTheater.Test.Data.csprojResolveAssemblyReference.cache
 C:\Dev\MyMovieTheater\MyMovieTheater.Test.Data\obj\Debug\MyMovieTheater.Test.Data.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.Test.Data\obj\Debug\MyMovieTheater.Test.Data.pdb
-C:\Dev\MyMovieTheater\MyMovieTheater.Test.Data\bin\Debug\AutoMapper.Net4.dll

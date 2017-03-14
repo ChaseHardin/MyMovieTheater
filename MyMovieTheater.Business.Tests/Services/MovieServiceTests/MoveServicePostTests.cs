@@ -10,7 +10,7 @@ using MyMovieTheater.Data.Models;
 namespace MyMovieTheater.Business.Tests.Services.MovieServiceTests
 {
     [TestClass]
-    public class MovieServiceTests
+    public class MoveServicePostTests
     {
         private MovieService _movieService;
 
@@ -18,16 +18,6 @@ namespace MyMovieTheater.Business.Tests.Services.MovieServiceTests
         public void Initialize()
         {
             _movieService = new MovieService();
-        }
-
-        [TestMethod]
-        public void GetMovies_ShouldReturnAllMovies()
-        {
-            var initialCount = GetMovies().Count;
-            AddMovie();
-
-            var result = _movieService.GetMovies();
-            Assert.AreEqual(initialCount + 1, result.Count);
         }
 
         [TestMethod]
@@ -59,25 +49,6 @@ namespace MyMovieTheater.Business.Tests.Services.MovieServiceTests
             using (var db = Application.GetDatabaseInstance())
             {
                 return db.Movies.First(x => x.Name == title);
-            }
-        }
-
-        private static void AddMovie()
-        {
-            using (var db = Application.GetDatabaseInstance())
-            {
-                var movie = new Movie
-                {
-                    MovieId = Guid.NewGuid(),
-                    Name = "TTitle",
-                    MovieTimes = new List<MovieTime>(),
-                    Rating = "R",
-                    ReleaseDate = DateTime.Now,
-                    TicketPrice = 7.75m
-                };
-
-                db.Movies.Add(movie);
-                db.SaveChanges();
             }
         }
 

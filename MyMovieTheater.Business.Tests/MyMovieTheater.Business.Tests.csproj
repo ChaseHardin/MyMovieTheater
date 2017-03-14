@@ -62,7 +62,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\MovieServiceTests\MovieServiceTests.cs" />
+    <Compile Include="Services\MovieServiceTests\MoveServicePostTests.cs" />
+    <Compile Include="Services\MovieServiceTests\MovieServiceGetTests.cs" />
+    <Compile Include="Services\MovieServiceTests\MovieServicePutTests.cs" />
+    <Compile Include="Services\MovieServiceTests\MovieServiceDeleteTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyMovieTheater.Business\MyMovieTheater.Business.csproj">
@@ -72,6 +75,10 @@
     <ProjectReference Include="..\MyMovieTheater.Data\MyMovieTheater.Data.csproj">
       <Project>{da74e6d9-332b-4582-8ef5-9201074121ae}</Project>
       <Name>MyMovieTheater.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyMovieTheater.Test.Data\MyMovieTheater.Test.Data.csproj">
+      <Project>{acfbd3fd-e883-49e3-b4f9-a24d2db66f4a}</Project>
+      <Name>MyMovieTheater.Test.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

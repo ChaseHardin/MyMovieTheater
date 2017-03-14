@@ -3,7 +3,6 @@
 \\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.csprojResolveAssemblyReference.cache
 \\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.dll
 \\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.pdb
-C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\AutoMapper.Net4.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\MyMovieTheater.Business.Tests.dll.config
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\MyMovieTheater.Business.Tests.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\MyMovieTheater.Business.Tests.pdb
@@ -22,3 +21,5 @@ C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\AutoMapper.xml
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.csprojResolveAssemblyReference.cache
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\obj\Debug\MyMovieTheater.Business.Tests.pdb
+C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\MyMovieTheater.Test.Data.dll
+C:\Dev\MyMovieTheater\MyMovieTheater.Business.Tests\bin\Debug\MyMovieTheater.Test.Data.pdb
