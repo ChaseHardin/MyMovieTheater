@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using MyMovieTheater.API.Tests.FeatureTests.Context;
 using MyMovieTheater.Data;
 using MyMovieTheater.Data.Models;

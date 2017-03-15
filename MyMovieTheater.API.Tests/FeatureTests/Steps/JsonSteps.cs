@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyMovieTheater.API.Tests.FeatureTests.Context;
 using MyMovieTheater.API.Tests.FeatureTests.Infrastructure;

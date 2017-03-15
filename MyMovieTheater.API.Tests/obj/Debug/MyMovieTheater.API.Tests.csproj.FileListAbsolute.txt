@@ -83,3 +83,15 @@ C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.pdb
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.xml
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\obj\Debug\MyMovieTheater.API.Tests.dll
 C:\Dev\MyMovieTheater\MyMovieTheater.API.Tests\obj\Debug\MyMovieTheater.API.Tests.pdb
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\MyMovieTheater.API.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\MyMovieTheater.Business.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\MyMovieTheater.Test.Data.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\LinqKit.dll
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\MyMovieTheater.API.pdb
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\MyMovieTheater.Business.pdb
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\MyMovieTheater.Test.Data.pdb
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.pdb
+\\Mac\Home\Documents\Dev\MyMovieTheater\MyMovieTheater.API.Tests\bin\Debug\AutoMapper.xml
