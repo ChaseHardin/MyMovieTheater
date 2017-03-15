@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using MyMovieTheater.Data.Models;
 
 namespace MyMovieTheater.Test.Data.MyMovieTheater.Movie
 {
@@ -12,10 +10,9 @@ namespace MyMovieTheater.Test.Data.MyMovieTheater.Movie
             {
                 MovieId = movieId,
                 TicketPrice = 8.95m,
-                MovieTimes = new List<MovieTime>(),
                 Rating = "R",
                 Name = "Batman",
-                ReleaseDate = TestClock.Date("2017-02-18")
+                ShowTime = TestClock.Date("2017-02-18")
             };
         }
     }

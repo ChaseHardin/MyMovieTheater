@@ -29,9 +29,8 @@ namespace MyMovieTheater.Business.Tests.Services.MovieServiceTests
             var movieViewModel = new MovieViewModel
             {
                 Name = title,
-                MovieTimes = new List<MovieTime>(),
                 Rating = "PG-13",
-                ReleaseDate = DateTime.Now,
+                ShowTime = DateTime.Now,
                 TicketPrice = 8.85m
             };
 

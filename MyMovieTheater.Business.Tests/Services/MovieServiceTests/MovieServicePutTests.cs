@@ -30,7 +30,7 @@ namespace MyMovieTheater.Business.Tests.Services.MovieServiceTests
             var movieViewModel = new MovieViewModel
             {
                 Name = "Updated Name",
-                ReleaseDate = TestClock.Now,
+                ShowTime = TestClock.Now,
                 TicketPrice = 55.5m,
                 Rating = "PG-13",
                 MovieId = addMovie.MovieId
@@ -40,9 +40,9 @@ namespace MyMovieTheater.Business.Tests.Services.MovieServiceTests
 
             Assert.AreEqual(initialCount, GetMovies().Count);
             Assert.AreEqual(movieViewModel.Name, actual.Name);
-            Assert.AreEqual(movieViewModel.ReleaseDate, actual.ReleaseDate);
+            Assert.AreEqual(movieViewModel.ShowTime, actual.ShowTime);
             Assert.AreEqual(movieViewModel.TicketPrice, actual.TicketPrice);
-            Assert.AreEqual(movieViewModel.ReleaseDate, actual.ReleaseDate);
+            Assert.AreEqual(movieViewModel.ShowTime, actual.ShowTime);
             Assert.AreEqual(movieViewModel.MovieId, actual.MovieId);
         }
 

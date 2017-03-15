@@ -31,7 +31,7 @@ namespace MyMovieTheater.Business.Tests.Services.MovieServiceTests
             Assert.AreEqual(addMovie.MovieId, actual.MovieId);
             Assert.AreEqual(addMovie.Name, actual.Name);
             Assert.AreEqual(addMovie.TicketPrice, actual.TicketPrice);
-            Assert.AreEqual(addMovie.ReleaseDate, actual.ReleaseDate);
+            Assert.AreEqual(addMovie.ShowTime, actual.ShowTime);
             Assert.AreEqual(addMovie.Rating, actual.Rating);
         }
 

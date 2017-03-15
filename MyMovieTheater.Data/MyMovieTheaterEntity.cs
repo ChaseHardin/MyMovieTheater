@@ -8,6 +8,11 @@ namespace MyMovieTheater.Data
         public MyMovieTheaterEntity() : base("MyMovieTheaterConnectionString") { }
 
         public DbSet<Movie> Movies { get; set; }
-        public DbSet<MovieTime> MovieTimes { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<MyMovieTheaterEntity>(null);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

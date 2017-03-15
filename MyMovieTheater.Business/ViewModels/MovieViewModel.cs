@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using MyMovieTheater.Data.Models;
 
 namespace MyMovieTheater.Business.ViewModels
@@ -13,8 +12,7 @@ namespace MyMovieTheater.Business.ViewModels
 
         public Guid MovieId { get; set; }
         public string Name { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public ICollection<MovieTime> MovieTimes { get; set; }
+        public DateTime ShowTime { get; set; }
         public decimal TicketPrice { get; set; }
         public string Rating { get; set; }
     }
